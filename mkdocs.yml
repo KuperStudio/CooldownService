@@ -1,0 +1,38 @@
+site_name: KuperStudio
+site_url: https://kuperstudio.github.io/CooldownService
+repo_name: KuperStudio/CooldownService
+repo_url: https://github.com/KuperStudio/CooldownService
+
+theme:
+  icon:
+    logo: material/alarm
+    repo: fontawesome/brands/git-alt
+  name: material
+  favicon: images/favicon.png
+  palette:
+  - scheme: default
+    primary: "Green"
+    accent: "Light Green"
+    toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  - scheme: slate
+    primary: "Green"
+    accent: "Light Green"
+    toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+nav:
+  - Home: index.md
+  - Documentation:
+      - Setting up: api/settingup.md
+      - Basic Usage: api/basicusage.md
+  - Examples: 
+    - Cooldown: examples/Cooldown.md
+  - API: api.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences

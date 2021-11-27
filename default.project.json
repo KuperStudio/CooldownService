@@ -1,0 +1,21 @@
+{
+  "name": "SignalsService",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "CooldownService": {
+        "$path": "CooldownService.lua"
+      }
+    },
+
+    "ServerScriptService": {
+        "Script1": {
+          "$path": "examples/Script1"
+        },
+        "Script2": {
+          "$path": "examples/Script2"
+        }
+    }
+  }
+}
