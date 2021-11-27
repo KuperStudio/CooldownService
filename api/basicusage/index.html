@@ -344,6 +344,54 @@
     Use of Cooldown
   </a>
   
+    <nav class="md-nav" aria-label="Use of Cooldown">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-setting-time" class="md-nav__link">
+    1. Setting Time
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-resetting-time" class="md-nav__link">
+    2. Resetting Time
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-getting-time" class="md-nav__link">
+    3. Getting Time
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-updating-time" class="md-nav__link">
+    4. Updating Time
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-comparing-value" class="md-nav__link">
+    5. Comparing Value
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-destroying-cooldown" class="md-nav__link">
+    6. Destroying Cooldown
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -477,6 +525,54 @@
     Use of Cooldown
   </a>
   
+    <nav class="md-nav" aria-label="Use of Cooldown">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-setting-time" class="md-nav__link">
+    1. Setting Time
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-resetting-time" class="md-nav__link">
+    2. Resetting Time
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-getting-time" class="md-nav__link">
+    3. Getting Time
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-updating-time" class="md-nav__link">
+    4. Updating Time
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-comparing-value" class="md-nav__link">
+    5. Comparing Value
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-destroying-cooldown" class="md-nav__link">
+    6. Destroying Cooldown
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -517,42 +613,30 @@
 </code></pre></div>
 <p>To get our Cooldown we use function <strong>:GetCooldown()</strong> and enter a name for our Cooldown, optionally we can insert indexes that acted as subclasses in our Cooldown, this can also be called folders.</p>
 <h2 id="use-of-cooldown">Use of Cooldown</h2>
-<ol>
-<li>Setting Time
-This function will change its cooldown value to the time the function was executed.</li>
-</ol>
+<h3 id="1-setting-time">1. Setting Time</h3>
+<p>This function will change its cooldown value to the time the function was executed.</p>
 <div class="highlight"><pre><span></span><code><span class="n">Cooldown</span><span class="p">:</span><span class="n">Set</span><span class="p">()</span>
 </code></pre></div>
-<ol>
-<li>Resetting Time
-Will reset cooldown value to zero.</li>
-</ol>
+<h3 id="2-resetting-time">2. Resetting Time</h3>
+<p>Will reset cooldown value to zero.</p>
 <div class="highlight"><pre><span></span><code><span class="n">Cooldown</span><span class="p">:</span><span class="n">Reset</span><span class="p">()</span>
 </code></pre></div>
-<ol>
-<li>Getting Time
-This function will get the value saved in cooldown.</li>
-</ol>
+<h3 id="3-getting-time">3. Getting Time</h3>
+<p>This function will get the value saved in cooldown.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">Time</span> <span class="o">=</span> <span class="n">Cooldown</span><span class="p">:</span><span class="n">Get</span><span class="p">()</span>
 </code></pre></div>
-<ol>
-<li>Updating Time
-This function will get the current cooling value by entering it as an argument of the defined function and will set the cooling value for the time since the end of the entered function as an argument.</li>
-</ol>
+<h3 id="4-updating-time">4. Updating Time</h3>
+<p>This function will get the current cooling value by entering it as an argument of the defined function and will set the cooling value for the time since the end of the entered function as an argument.</p>
 <div class="highlight"><pre><span></span><code><span class="n">Cooldown</span><span class="p">:</span><span class="n">Update</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">Time</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">Time</span><span class="p">)</span>
 <span class="kr">end</span><span class="p">)</span>
 </code></pre></div>
-<ol>
-<li>Comparing Value
-This function will compare the time entered as an argument with the cooldown time and thus give a return of the subtraction between the values.</li>
-</ol>
+<h3 id="5-comparing-value">5. Comparing Value</h3>
+<p>This function will compare the time entered as an argument with the cooldown time and thus give a return of the subtraction between the values.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">Difference</span> <span class="o">=</span> <span class="n">Cooldown</span><span class="p">:</span><span class="n">Compare</span><span class="p">(</span><span class="nb">os.time</span><span class="p">())</span>
 </code></pre></div>
-<ol>
-<li>Destroying Cooldown
-Will destroy starting class from current cooldown.</li>
-</ol>
+<h3 id="6-destroying-cooldown">6. Destroying Cooldown</h3>
+<p>Will destroy starting class from current cooldown.</p>
 <div class="highlight"><pre><span></span><code><span class="n">Cooldown</span><span class="p">:</span><span class="n">Destroy</span><span class="p">()</span>
 </code></pre></div>
 <div class="admonition warning">
