@@ -22,28 +22,28 @@ To get our Cooldown we use function **:GetCooldown()** and enter a name for our 
 
 ## Use of Cooldown
 
-1. Setting Time
+### 1. Setting Time
 This function will change its cooldown value to the time the function was executed.
 
 ```lua
 Cooldown:Set()
 ```
 
-2. Resetting Time
+### 2. Resetting Time
 Will reset cooldown value to zero.
 
 ```lua
 Cooldown:Reset()
 ```
 
-3. Getting Time
+### 3. Getting Time
 This function will get the value saved in cooldown.
 
 ```lua
 local Time = Cooldown:Get()
 ```
 
-4. Updating Time
+### 4. Updating Time
 This function will get the current cooling value by entering it as an argument of the defined function and will set the cooling value for the time since the end of the entered function as an argument.
 
 ```lua
@@ -52,14 +52,14 @@ Cooldown:Update(function(Time)
 end)
 ```
 
-5. Comparing Value
+### 5. Comparing Value
 This function will compare the time entered as an argument with the cooldown time and thus give a return of the subtraction between the values.
 
 ```lua
 local Difference = Cooldown:Compare(os.time())
 ```
 
-6. Destroying Cooldown
+### 6. Destroying Cooldown
 Will destroy starting class from current cooldown.
 
 ```lua
